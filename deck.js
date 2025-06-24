@@ -41,15 +41,17 @@ const deck = {
         { category: "Buildings", items: ["castle", "lighthouse", "windmill", "igloo", "bridge", "church", "skyscraper", "mosque", "pagoda", "arena"] },
         { category: "Actions", items: ["surfing", "skydiving", "juggling", "ice skating", "fencing", "scuba diving", "horse riding", "archery", "rowing", "parachuting"] },
         { category: "Weather", items: ["tornado", "hurricane", "blizzard", "hailstorm", "sandstorm", "tsunami", "volcano eruption", "drought", "monsoon", "cyclone"] },
-        { category: "Insects", items: ["mantis", "stag beetle", "firefly", "cicada", "hornet", "weevil", "stick insect", "mayfly", "lacewing", "silverfish"] },
-        { category: "Emotions", items: ["jealous", "embarrassed", "proud", "ashamed", "relieved", "nervous", "hopeful", "disgusted", "guilty", "shy"] },
-        { category: "School", items: ["calculator", "protractor", "compass", "whiteboard", "projector", "binder", "clipboard", "highlighter", "stapler", "paperclip"] },
-        { category: "Body Parts", items: ["ankle", "elbow", "chin", "wrist", "thumb", "eyebrow", "shoulder", "heel", "tongue", "knuckle"] },
-        { category: "Candy", items: ["jawbreaker", "taffy", "rock candy", "fudge", "licorice", "peanut brittle", "toffee apple", "candy corn", "fruit leather", "sherbet"] },
-        { category: "Pets", items: ["ferret", "chinchilla", "parakeet", "iguana", "tarantula", "hedgehog", "salamander", "gecko", "rat", "hermit crab"] },
-        { category: "Fantasy", items: ["centaur", "phoenix", "griffin", "troll", "golem", "minotaur", "gargoyle", "hydra", "cyclops", "banshee"] },
-        { category: "Transport Parts", items: ["axle", "gearbox", "dashboard", "windscreen", "bumper", "headlight", "exhaust", "hubcap", "indicator", "radiator"] },
-        { category: "Tools", items: ["chisel", "mallet", "plane", "rasp", "vise", "awl", "level", "crowbar", "soldering iron", "trowel"] }
+        { category: "Fantasy Creatures", items: ["centaur", "phoenix", "griffin", "troll", "golem", "minotaur", "gargoyle", "hydra", "cyclops", "banshee"] },
+        { category: "Camping", items: ["tent", "campfire", "backpack", "lantern", "sleeping bag", "compass", "map", "marshmallow stick", "hiking boots", "canteen"] },
+        { category: "Outer Space", items: ["astronaut", "spaceship", "planet", "satellite", "alien", "moon rover", "asteroid", "UFO", "space station", "black hole"] },
+        { category: "Fantasy Actions", items: ["flying", "casting spell", "sword fighting", "riding dragon", "potion making", "teleporting", "invisibility", "shape-shifting", "summoning", "fireball"] },
+        { category: "Board Games", items: ["chess", "checkers", "monopoly", "dice", "cards", "scrabble", "jenga", "clue", "battleship", "dominoes"] },
+        { category: "Technology", items: ["laptop", "smartphone", "VR headset", "camera", "keyboard", "joystick", "drone", "USB stick", "robot", "headphones"] },
+        { category: "Occupations 2", items: ["zookeeper", "pilot", "DJ", "librarian", "clown", "barber", "tattoo artist", "delivery driver", "tailor", "security guard"] },
+        { category: "Fairy Tale Items", items: ["magic wand", "glass slipper", "crown", "throne", "poison apple", "treasure chest", "magic mirror", "spell book", "cloak", "enchanted sword"] },
+        { category: "Jungle", items: ["monkey", "parrot", "vine", "jungle hut", "banana tree", "snake", "toucan", "panther", "bamboo", "tree frog"] },
+        { category: "Pirates", items: ["pirate", "treasure", "ship", "map", "parrot", "sword", "cannon", "eyepatch", "hook", "flag"] }
+
     ],
     Hard: [
         { category: "Animals", items: ["platypus", "narwhal", "armadillo", "sloth", "pangolin", "chameleon", "axolotl", "tapir", "wombat", "aardvark"] },
@@ -67,14 +69,15 @@ const deck = {
         { category: "Buildings", items: ["treehouse", "observatory", "palace", "fortress", "amphitheater", "pyramid", "cathedral", "colosseum", "museum", "prison"] },
         { category: "Actions", items: ["tightrope walking", "fire breathing", "unicycling", "pole vaulting", "bungee jumping", "sword swallowing", "breakdancing", "parkour", "plate spinning", "log rolling"] },
         { category: "Weather", items: ["supercell", "derecho", "ice storm", "dust devil", "polar vortex", "fire whirl", "microburst", "waterspout", "ball lightning", "sun dog"] },
-        { category: "Insects", items: ["atlas moth", "goliath beetle", "stick insect", "mantis shrimp", "giant weta", "tarantula hawk", "assassin bug", "bombardier beetle", "antlion", "dobsonfly"] },
-        { category: "Emotions", items: ["nostalgia", "melancholy", "awe", "envy", "embarrassment", "anxiety", "relief", "disgust", "curiosity", "pride"] },
-        { category: "School", items: ["microscope", "telescope", "petri dish", "test tube", "atom", "beaker", "Bunsen burner", "circuit board", "vortex", "lab coat"] },
-        { category: "Body Parts", items: ["uvula", "sternum", "scapula", "patella", "phalanx", "metatarsal", "coccyx", "clavicle", "mandible", "fibula"] },
-        { category: "Candy", items: ["halvah", "turkish delight", "pocky", "mochi", "dulce de leche", "marzipan", "nougat", "divinity", "pastille", "aniseed ball"] },
-        { category: "Pets", items: ["axolotl", "sugar glider", "fancy rat", "tarantula", "hermit crab", "gecko", "skunk", "hedgehog", "salamander", "ferret"] },
-        { category: "Fantasy", items: ["kraken", "basilisk", "chimera", "cerberus", "leviathan", "dryad", "pegasus", "selkie", "wendigo", "djinn"] },
-        { category: "Transport Parts", items: ["differential", "universal joint", "catalytic converter", "flywheel", "strut", "torsion bar", "solenoid", "idler arm", "kingpin", "rocker panel"] },
-        { category: "Tools", items: ["adze", "reamer", "spokeshave", "caliper", "gimlet", "drawknife", "bradawl", "nibbler", "punch", "scriber"] }
+        { category: "Mythological Creatures", items: ["kraken", "basilisk", "chimera", "cerberus", "leviathan", "dryad", "pegasus", "selkie", "wendigo", "djinn"] },
+        { category: "Scientific Items", items: ["microscope", "telescope", "petri dish", "test tube", "atom", "beaker", "Bunsen burner", "circuit board", "vortex", "lab coat"] },
+        { category: "Architectural Structures", items: ["aqueduct", "viaduct", "gazebo", "obelisk", "rotunda", "dome", "minaret", "colonnade", "drawbridge", "triumphal arch"] },
+        { category: "Esoteric Jobs", items: ["forensic artist", "haberdasher", "glassblower", "luthier", "taxidermist", "blacksmith", "sommelier", "meteorologist", "geologist", "historian"] },
+        { category: "Unusual Instruments", items: ["glass harp", "ondes Martenot", "waterphone", "crwth", "nyckelharpa", "sarangi", "sheng", "fujara", "cimbalom", "daxophone"] },
+        { category: "Rare Vehicles", items: ["amphibious car", "icebreaker", "gyroplane", "land yacht", "rail bike", "hydrofoil", "snowcat", "autogyro", "aerial tramway", "hovercraft"] },
+        { category: "Advanced Emotions", items: ["nostalgia", "melancholy", "awe", "envy", "embarrassment", "anxiety", "relief", "disgust", "curiosity", "pride"] },
+        { category: "Cryptids", items: ["bigfoot", "loch ness monster", "chupacabra", "mokele-mbembe", "yeti", "jersey devil", "mothman", "ahool", "bun yip", "flatwoods monster"] },
+        { category: "Hard-to-Draw Actions", items: ["meditating", "hypnotizing", "camouflaging", "levitating", "time traveling", "whispering", "echoing", "camper building tent", "teleporting", "transforming"] },
+        { category: "Steampunk", items: ["goggles", "gear", "pocket watch", "steam engine", "mechanical arm", "zeppelin", "brass pipe", "control panel", "ray gun", "airship"] }
     ]
 };
