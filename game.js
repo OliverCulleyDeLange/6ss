@@ -3,7 +3,7 @@ let timeLeft = 60;
 
 function startTimer() {
     clearInterval(timerInterval);
-    timeLeft = 60;
+    timeLeft = 59;
     updateTimerDisplay();
     timerInterval = setInterval(() => {
         timeLeft--;
