@@ -50,7 +50,71 @@
         <ul id="items"></ul>
     </div>
 
+    <div style="margin:1em;">
+        <span id="timer" style="font-size:2em;">01:00</span>
+        <button id="start-timer" onclick="startTimer()">Start Timer</button>
+    </div>
+
     <script>
+
+        let timerInterval;
+        let timeLeft = 60;
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 59;
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    playBeepPattern(
+                        [
+                            [100, 50],
+                            [100, 50],
+                            [100, 50],
+                            [100, 500],
+                            [100, 50],
+                            [100, 50],
+                            [100, 50],
+                            [100, 500],
+                        ]
+                    );
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const min = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+            const sec = String(timeLeft % 60).padStart(2, '0');
+            document.getElementById('timer').textContent = `${min}:${sec}`;
+        }
+
+        function playBeepPattern(pattern) {
+            let idx = 0;
+            function next() {
+                if (idx >= pattern.length) return;
+                const [beepDuration, gapDuration] = pattern[idx];
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = ctx.createOscillator();
+                oscillator.frequency.value = 1200;
+                oscillator.connect(ctx.destination);
+                oscillator.start();
+                setTimeout(() => {
+                    oscillator.stop();
+                    ctx.close();
+                    idx++;
+                    if (gapDuration > 0) {
+                        setTimeout(next, gapDuration);
+                    } else {
+                        next();
+                    }
+                }, beepDuration);
+            }
+            next();
+        }
+
         function drawCard() {
             const difficulty = document.getElementById('difficulty').value;
             const cards = deck[difficulty];
