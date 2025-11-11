@@ -23,7 +23,18 @@ const deck = {
         { category: "Pets", items: ["dog", "cat", "rabbit", "hamster", "goldfish", "turtle", "parrot", "mouse", "frog", "snake"] },
         { category: "Fantasy", items: ["unicorn", "dragon", "fairy", "elf", "witch", "wizard", "goblin", "troll", "giant", "mermaid"] },
         { category: "Transport Parts", items: ["wheel", "engine", "steering wheel", "seatbelt", "mirror", "door", "trunk", "window", "pedal", "horn"] },
-        { category: "Tools", items: ["hammer", "screwdriver", "saw", "wrench", "drill", "pliers", "tape measure", "nail", "axe", "toolbox"] }
+        { category: "Tools", items: ["hammer", "screwdriver", "saw", "wrench", "drill", "pliers", "tape measure", "nail", "axe", "toolbox"] },
+        { category: "At the Park", items: ["slide", "swing", "tree", "bench", "ball", "kite", "duck pond", "fountain", "picnic basket", "flower"] },
+        { category: "Things that are Round", items: ["ball", "clock", "sun", "moon", "orange", "button", "coin", "pizza", "wheel", "cookie"] },
+        { category: "Tools", items: ["hammer", "screwdriver", "saw", "wrench", "drill", "pliers", "tape measure", "nail", "axe", "toolbox"] },
+        { category: "Vegetables", items: ["carrot", "broccoli", "tomato", "potato", "onion", "corn", "lettuce", "bell pepper", "cucumber", "mushroom"] },
+        { category: "Places", items: ["park", "beach", "library", "store", "home", "hospital", "restaurant", "airport", "zoo", "museum"] },
+        { category: "Kitchen Items", items: ["fork", "knife", "spoon", "plate", "bowl", "pan", "pot", "cutting board", "spatula", "whisk"] },
+        { category: "In the Sky", items: ["sun", "moon", "star", "cloud", "airplane", "bird", "kite", "rainbow", "balloon", "satellite"] },
+        { category: "Bathroom Items", items: ["soap", "towel", "toothbrush", "toothpaste", "toilet", "sink", "bathtub", "shower", "shampoo", "mirror"] },
+        { category: "Breakfast Foods", items: ["cereal", "toast", "egg", "pancake", "waffle", "bacon", "sausage", "yogurt", "oatmeal", "donut"] },
+        { category: "Colors", items: ["red", "blue", "green", "yellow", "orange", "purple", "black", "white", "pink", "brown"] },
+        { category: "At the Farm", items: ["barn", "tractor", "farmer", "hay bale", "fence", "silo", "pitchfork", "wheat", "scarecrow", "trough"] }
     ],
     Medium: [
         { category: "Animals", items: ["elephant", "giraffe", "kangaroo", "penguin", "crocodile", "octopus", "owl", "bat", "crab", "snail"] },
@@ -50,8 +61,18 @@ const deck = {
         { category: "Occupations 2", items: ["zookeeper", "pilot", "DJ", "librarian", "clown", "barber", "tattoo artist", "delivery driver", "tailor", "security guard"] },
         { category: "Fairy Tale Items", items: ["magic wand", "glass slipper", "crown", "throne", "poison apple", "treasure chest", "magic mirror", "spell book", "cloak", "enchanted sword"] },
         { category: "Jungle", items: ["monkey", "parrot", "vine", "jungle hut", "banana tree", "snake", "toucan", "panther", "bamboo", "tree frog"] },
-        { category: "Pirates", items: ["pirate", "treasure", "ship", "map", "parrot", "sword", "cannon", "eyepatch", "hook", "flag"] }
-
+        { category: "Pirates", items: ["pirate", "treasure", "ship", "map", "parrot", "sword", "cannon", "eyepatch", "hook", "flag"] },
+        { category: "Office Supplies", items: ["stapler", "paperclip", "pen", "notebook", "computer", "printer", "scissors", "tape", "highlighter", "whiteboard"] },
+        { category: "In the City", items: ["taxi", "traffic light", "skyscraper", "bus stop", "park bench", "fountain", "statue", "subway", "crosswalk", "streetlight"] },
+        { category: "Spices & Herbs", items: ["salt", "pepper", "cinnamon", "basil", "oregano", "garlic", "ginger", "chili", "paprika", "rosemary"] },
+        { category: "In the Desert", items: ["cactus", "camel", "scorpion", "lizard", "sand dune", "oasis", "pyramid", "tumbleweed", "vulture", "mirage"] },
+        { category: "Winter Items", items: ["snowflake", "snowman", "sled", "skis", "ice skate", "scarf", "mitten", "hot chocolate", "fireplace", "snowboard"] },
+        { category: "Beach Items", items: ["seashell", "crab", "starfish", "bucket", "shovel", "beach ball", "umbrella", "sandcastle", "sunglasses", "flip-flops"] },
+        { category: "Circus", items: ["clown", "tent", "trapeze", "lion", "elephant", "unicycle", "acrobat", "ringmaster", "tightrope", "cannonball"] },
+        { category: "Patterns", items: ["stripes", "polka dots", "plaid", "chevron", "spiral", "zig-zag", "checkered", "floral", "camouflage", "wavy"] },
+        { category: "Hobbies", items: ["painting", "gardening", "fishing", "knitting", "hiking", "photography", "cooking", "gaming", "stamp collecting", "chess"] },
+        { category: "Mythology (Greek)", items: ["Zeus", "Hercules", "Pegasus", "Medusa", "Minotaur", "Cyclops", "trident", "lightning bolt", "Centaur", "Cerberus"] },
+        { category: "Drinks", items: ["water", "milk", "juice", "soda", "tea", "coffee", "lemonade", "hot chocolate", "smoothie", "milkshake"] },
     ],
     Hard: [
         { category: "Animals", items: ["platypus", "narwhal", "armadillo", "sloth", "pangolin", "chameleon", "axolotl", "tapir", "wombat", "aardvark"] },
@@ -78,6 +99,16 @@ const deck = {
         { category: "Advanced Emotions", items: ["nostalgia", "melancholy", "awe", "envy", "embarrassment", "anxiety", "relief", "disgust", "curiosity", "pride"] },
         { category: "Cryptids", items: ["bigfoot", "loch ness monster", "chupacabra", "mokele-mbembe", "yeti", "jersey devil", "mothman", "ahool", "bun yip", "flatwoods monster"] },
         { category: "Hard-to-Draw Actions", items: ["meditating", "hypnotizing", "camouflaging", "levitating", "time traveling", "whispering", "echoing", "camper building tent", "teleporting", "transforming"] },
-        { category: "Steampunk", items: ["goggles", "gear", "pocket watch", "steam engine", "mechanical arm", "zeppelin", "brass pipe", "control panel", "ray gun", "airship"] }
+        { category: "Steampunk", items: ["goggles", "gear", "pocket watch", "steam engine", "mechanical arm", "zeppelin", "brass pipe", "control panel", "ray gun", "airship"] },
+        { category: "Phobias (Concept)", items: ["arachnophobia", "claustrophobia", "acrophobia", "trypophobia", "astraphobia", "nyctophobia", "glossophobia", "aquaphobia", "mysophobia", "coulrophobia"] },
+        { category: "Literary Genres", items: ["science fiction", "fantasy", "mystery", "romance", "horror", "thriller", "biography", "comedy", "drama", "poetry"] },
+        { category: "Ancient Wonders", items: ["Great Pyramid of Giza", "Hanging Gardens", "Statue of Zeus", "Temple of Artemis", "Mausoleum", "Colossus of Rhodes", "Lighthouse of Alexandria", "Machu Picchu", "Great Wall", "Colosseum"] },
+        { category: "Types of Ships", items: ["galleon", "aircraft carrier", "battleship", "tugboat", "cruise ship", "destroyer", "dinghy", "catamaran", "container ship", "junk"] },
+        { category: "Chess", items: ["king", "queen", "rook", "bishop", "knight", "pawn", "checkmate", "chessboard", "castling", "en passant"] },
+        { category: "Collective Nouns", items: ["murder (crows)", "pride (lions)", "school (fish)", "flock (birds)", "herd (cows)", "swarm (bees)", "gaggle (geese)", "pod (whales)", "army (ants)", "parliament (owls)"] },
+        { category: "Constellations", items: ["Orion", "Ursa Major", "Ursa Minor", "Cassiopeia", "Leo", "Taurus", "Scorpio", "Sagittarius", "Andromeda", "Cygnus"] },
+        { category: "Extinct Animals", items: ["dodo", "woolly mammoth", "saber-tooth tiger", "passenger pigeon", "megalodon", "tyrannosaurus rex", "triceratops", "stegosaurus", "velociraptor", "quagga"] },
+        { category: "Logical Fallacies", items: ["straw man", "ad hominem", "slippery slope", "red herring", "false dichotomy", "circular reasoning", "bandwagon", "hasty generalization", "appeal to authority", "sunk cost fallacy"] },
+        { category: "Famous Landmarks", items: ["Eiffel Tower", "Statue of Liberty", "Great Pyramid", "Big Ben", "Leaning Tower of Pisa", "Sydney Opera House", "Great Wall of China", "Taj Mahal", "Colosseum", "Mount Rushmore"] }
     ]
 };
