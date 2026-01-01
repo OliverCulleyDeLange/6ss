@@ -1,10 +1,10 @@
 const deck = {
     Easy: [
         { category: "Animals", items: ["cat", "dog", "fish", "bird", "rabbit", "cow", "duck", "sheep", "pig", "horse"] },
-        { category: "Fruits", items: ["apple", "banana", "grapes", "pear", "pineapple", "watermelon", "kiwi", "cherry", "strawberry", "blueberry"] },
+        { category: "Fruits", items: ["apple", "banana", "grapes", "pear", "orange", "watermelon", "lemon", "cherry", "strawberry", "peach"] },
         { category: "Vehicles", items: ["car", "bus", "bicycle", "boat", "train", "truck", "motorcycle", "plane", "helicopter", "submarine"] },
         { category: "Clothes", items: ["shirt", "trousers", "dress", "skirt", "hat", "shoes", "socks", "scarf", "gloves", "coat"] },
-        { category: "Toys", items: ["ball", "doll", "teddy bear", "kite", "yo-yo", "robot", "puzzle", "rubix cube", "frisbee", "jack in the box"] },
+        { category: "Toys", items: ["ball", "doll", "teddy bear", "kite", "yo-yo", "robot", "puzzle", "blocks", "frisbee", "toy car"] },
         { category: "Food", items: ["pizza", "burger", "hotdog", "sandwich", "cake", "cookie", "ice cream", "fries", "egg", "bread"] },
         { category: "Nature", items: ["tree", "flower", "leaf", "mountain", "river", "cloud", "sun", "moon", "star", "rain"] },
         { category: "Household", items: ["chair", "table", "bed", "lamp", "clock", "door", "window", "cup", "plate", "spoon"] },
@@ -27,7 +27,7 @@ const deck = {
     ],
     Medium: [
         { category: "Animals", items: ["elephant", "giraffe", "kangaroo", "penguin", "crocodile", "octopus", "owl", "bat", "crab", "snail"] },
-        { category: "Fruits", items: ["pineapple", "watermelon", "kiwi", "mango", "pomegranate", "grapefruit", "coconut", "apricot", "fig", "lime"] },
+        { category: "Fruits", items: ["pineapple", "watermelon", "kiwi", "mango", "avocado", "grapefruit", "coconut", "apricot", "plum", "lime"] },
         { category: "Vehicles", items: ["rocket", "canoe", "tractor", "scooter", "ambulance", "fire truck", "police car", "subway", "van", "zeppelin"] },
         { category: "Clothes", items: ["overalls", "tuxedo", "raincoat", "mittens", "boots", "tie", "belt", "vest", "blazer", "swimsuit"] },
         { category: "Toys", items: ["marbles", "slingshot", "spinning top", "action figure", "model plane", "puppet", "hula hoop", "jump rope", "drone", "water gun"] },
@@ -40,7 +40,7 @@ const deck = {
         { category: "Sea Creatures", items: ["stingray", "orca", "eel", "sea urchin", "manatee", "walrus", "sea lion", "manta ray", "moray eel", "sea cucumber"] },
         { category: "Buildings", items: ["castle", "lighthouse", "windmill", "igloo", "bridge", "church", "skyscraper", "mosque", "pagoda", "arena"] },
         { category: "Actions", items: ["surfing", "skydiving", "juggling", "ice skating", "fencing", "scuba diving", "horse riding", "archery", "rowing", "parachuting"] },
-        { category: "Weather", items: ["tornado", "hurricane", "blizzard", "hailstorm", "sandstorm", "tsunami", "volcano eruption", "drought", "monsoon", "cyclone"] },
+        { category: "Weather", items: ["tornado", "hurricane", "blizzard", "hailstorm", "sandstorm", "thunderstorm", "snowstorm", "windy day", "cloudy sky", "sunny day"] },
         { category: "Fantasy Creatures", items: ["centaur", "phoenix", "griffin", "troll", "golem", "minotaur", "gargoyle", "hydra", "cyclops", "banshee"] },
         { category: "Camping", items: ["tent", "campfire", "backpack", "lantern", "sleeping bag", "compass", "map", "marshmallow stick", "hiking boots", "canteen"] },
         { category: "Outer Space", items: ["astronaut", "spaceship", "planet", "satellite", "alien", "moon rover", "asteroid", "UFO", "space station", "black hole"] },
@@ -54,8 +54,8 @@ const deck = {
 
     ],
     Hard: [
-        { category: "Animals", items: ["platypus", "narwhal", "armadillo", "sloth", "pangolin", "chameleon", "axolotl", "tapir", "wombat", "aardvark"] },
-        { category: "Fruits", items: ["dragonfruit", "starfruit", "durian", "jackfruit", "rambutan", "lychee", "persimmon", "tamarillo", "longan", "salak"] },
+        { category: "Animals", items: ["platypus", "narwhal", "armadillo", "sloth", "rhino", "chameleon", "iguana", "llama", "wombat", "porcupine"] },
+        { category: "Fruits", items: ["dragonfruit", "starfruit", "papaya", "passion fruit", "cantaloupe", "lychee", "persimmon", "guava", "pomelo", "honeydew"] },
         { category: "Vehicles", items: ["rickshaw", "segway", "hoverboard", "monorail", "dog sled", "hot air balloon", "hang glider", "unicycle", "gondola", "tandem bike"] },
         { category: "Clothes", items: ["kimono", "sari", "poncho", "balaclava", "lederhosen", "cape", "toga", "beret", "corset", "clogs"] },
         { category: "Toys", items: ["Rubik's cube", "model train", "slot car", "yo-yo trick", "remote control car", "pogo stick", "stilts", "magic set", "chemistry set", "model rocket"] },
@@ -64,20 +64,20 @@ const deck = {
         { category: "Household", items: ["grandfather clock", "chandelier", "radiator", "projector", "juicer", "ironing board", "fireplace", "alarm clock", "dishwasher", "mop"] },
         { category: "Sports", items: ["curling stone", "polo mallet", "javelin", "luge", "cricket bat", "snooker cue", "paraglider", "windsurf board", "paddleboard", "boomerang"] },
         { category: "Jobs", items: ["scuba diver", "mountain guide", "puppeteer", "beekeeper", "ventriloquist", "sumo wrestler", "stunt double", "cartographer", "lighthouse keeper", "snake charmer"] },
-        { category: "Musical Instruments", items: ["didgeridoo", "hurdy-gurdy", "theremin", "ocarina", "sitar", "pan flute", "glass harmonica", "shamisen", "zither", "contrabassoon"] },
+        { category: "Musical Instruments", items: ["didgeridoo", "mandolin", "ukulele", "ocarina", "sitar", "pan flute", "recorder", "banjo", "zither", "bassoon"] },
         { category: "Sea Creatures", items: ["giant squid", "blue whale", "anglerfish", "nautilus", "sea dragon", "blobfish", "gulper eel", "vampire squid", "coelacanth", "frilled shark"] },
         { category: "Buildings", items: ["treehouse", "observatory", "palace", "fortress", "amphitheater", "pyramid", "cathedral", "colosseum", "museum", "prison"] },
         { category: "Actions", items: ["tightrope walking", "fire breathing", "unicycling", "pole vaulting", "bungee jumping", "sword swallowing", "breakdancing", "parkour", "plate spinning", "log rolling"] },
-        { category: "Weather", items: ["supercell", "derecho", "ice storm", "dust devil", "polar vortex", "fire whirl", "microburst", "waterspout", "ball lightning", "sun dog"] },
+        { category: "Weather", items: ["thunderstorm", "ice storm", "dust storm", "dust devil", "cold front", "whirlwind", "downpour", "waterspout", "lightning", "rainbow"] },
         { category: "Mythological Creatures", items: ["kraken", "basilisk", "chimera", "cerberus", "leviathan", "dryad", "pegasus", "selkie", "wendigo", "djinn"] },
         { category: "Scientific Items", items: ["microscope", "telescope", "petri dish", "test tube", "atom", "beaker", "Bunsen burner", "circuit board", "vortex", "lab coat"] },
         { category: "Architectural Structures", items: ["aqueduct", "viaduct", "gazebo", "obelisk", "rotunda", "dome", "minaret", "colonnade", "drawbridge", "triumphal arch"] },
         { category: "Esoteric Jobs", items: ["forensic artist", "haberdasher", "glassblower", "luthier", "taxidermist", "blacksmith", "sommelier", "meteorologist", "geologist", "historian"] },
-        { category: "Unusual Instruments", items: ["glass harp", "ondes Martenot", "waterphone", "crwth", "nyckelharpa", "sarangi", "sheng", "fujara", "cimbalom", "daxophone"] },
+        { category: "World Instruments", items: ["djembe", "marimba", "steel drum", "bongo drums", "kalimba", "rain stick", "cowbell", "wind chimes", "gong", "castanets"] },
         { category: "Rare Vehicles", items: ["amphibious car", "icebreaker", "gyroplane", "land yacht", "rail bike", "hydrofoil", "snowcat", "autogyro", "aerial tramway", "hovercraft"] },
-        { category: "Advanced Emotions", items: ["nostalgia", "melancholy", "awe", "envy", "embarrassment", "anxiety", "relief", "disgust", "curiosity", "pride"] },
-        { category: "Cryptids", items: ["bigfoot", "loch ness monster", "chupacabra", "mokele-mbembe", "yeti", "jersey devil", "mothman", "ahool", "bun yip", "flatwoods monster"] },
-        { category: "Hard-to-Draw Actions", items: ["meditating", "hypnotizing", "camouflaging", "levitating", "time traveling", "whispering", "echoing", "camper building tent", "teleporting", "transforming"] },
+        { category: "Advanced Emotions", items: ["jealous", "worried", "amazed", "envious", "embarrassed", "anxious", "relieved", "disgusted", "curious", "proud"] },
+        { category: "Legendary Creatures", items: ["bigfoot", "loch ness monster", "yeti", "vampire", "werewolf", "zombie", "ghost", "alien", "monster", "giant"] },
+        { category: "Complex Actions", items: ["meditating", "conducting orchestra", "painting", "climbing", "knitting", "whispering", "lifting weights", "building", "balancing", "stretching"] },
         { category: "Steampunk", items: ["goggles", "gear", "pocket watch", "steam engine", "mechanical arm", "zeppelin", "brass pipe", "control panel", "ray gun", "airship"] }
     ]
 };
