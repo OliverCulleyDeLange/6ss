@@ -55,15 +55,31 @@ function playBeepPattern(pattern) {
     next();
 }
 
+const seenCards = { Easy: new Set(), Medium: new Set(), Hard: new Set() };
+
 function drawCard() {
     const difficulty = document.getElementById('difficulty').value;
     const cards = deck[difficulty];
-    const random = cards[Math.floor(Math.random() * cards.length)];
+    const seen = seenCards[difficulty];
 
-    document.getElementById('card').style.display = 'block';
-    document.getElementById('category').textContent = `${random.category} (${difficulty})`;
-
+    const card = document.getElementById('card');
+    const category = document.getElementById('category');
     const itemsList = document.getElementById('items');
+
+    if (seen.size >= cards.length) {
+        card.style.display = 'block';
+        category.textContent = `All ${difficulty} cards seen!`;
+        itemsList.innerHTML = '<li>Try another difficulty.</li>';
+        return;
+    }
+
+    const remaining = cards.map((_, i) => i).filter(i => !seen.has(i));
+    const idx = remaining[Math.floor(Math.random() * remaining.length)];
+    seen.add(idx);
+    const random = cards[idx];
+
+    card.style.display = 'block';
+    category.textContent = `${random.category} (${difficulty})`;
     itemsList.innerHTML = '';
     random.items.forEach(item => {
         const li = document.createElement('li');
