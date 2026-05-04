@@ -59,7 +59,6 @@ const deck = {
         { category: "Gardening Equipment", items: ["spade", "rake", "watering can", "wheelbarrow", "hose", "lawn mower", "shears", "trowel", "sprinkler", "hedge trimmer"] },
         { category: "Jewellery", items: ["ring", "necklace", "earrings", "bracelet", "watch", "locket", "pendant", "brooch", "anklet", "cufflinks"] },
         { category: "Hair Styles", items: ["ponytail", "bun", "mohawk", "braid", "afro", "bald", "mullet", "bob", "dreadlocks", "pigtails"] },
-        { category: "Dinosaurs", items: ["T-rex", "triceratops", "stegosaurus", "pterodactyl", "velociraptor", "brachiosaurus", "ankylosaurus", "diplodocus", "parasaurolophus", "mosasaurus"] },
         { category: "Birds", items: ["eagle", "swan", "flamingo", "woodpecker", "peacock", "ostrich", "pelican", "hummingbird", "robin", "hawk"] },
         { category: "Insects 2", items: ["grasshopper", "praying mantis", "scorpion", "wasp", "hornet", "cricket", "cockroach", "termite", "firefly", "millipede"] },
         { category: "Power Tools", items: ["drill", "jackhammer", "chainsaw", "sander", "circular saw", "nail gun", "table saw", "leaf blower", "angle grinder", "pressure washer"] },
